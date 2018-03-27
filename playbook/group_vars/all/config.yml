@@ -1,0 +1,4 @@
+---
+user: '{{ current_user }}'
+group_name: '{{ current_user }}'
+user_home_path: "{{ lookup('env','HOME') }}"
