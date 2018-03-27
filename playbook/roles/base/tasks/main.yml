@@ -1,6 +1,8 @@
 ---
 - name: Update apt cache
   apt: update_cache=yes
+  become: yes
+  become_user: root
 
 - name: Install apt dependencies
   apt: name={{ item }}
@@ -10,3 +12,5 @@
     - libyaml-dev
     - zlib1g-dev
     - python-dev
+  become: yes
+  become_user: root

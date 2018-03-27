@@ -1,0 +1,6 @@
+---
+- name: clone loggi-web repo
+  git:
+    repo=git@github.com:loggi/loggi-web.git
+    dest=/opt/loggi/web
+    accept_hostkey=True

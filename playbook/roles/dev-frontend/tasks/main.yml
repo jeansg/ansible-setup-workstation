@@ -1,0 +1,13 @@
+---
+- name: clone FE repos 
+  git:
+    repo=git@github.com:loggi/{{ item }}.git
+    dest=/opt/loggi/{{ item }}
+    accept_hostkey=True
+  with_items:
+    - outer-pages-ui
+    - corp-web-ui
+    - retail-web-ui
+    - pro-web-ui
+    - war-room-web-ui
+    - wms-web-ui

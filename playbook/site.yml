@@ -5,3 +5,5 @@
   roles:
     - base
     - pip-requirements
+    - dev-backend
+    - dev-frontend
