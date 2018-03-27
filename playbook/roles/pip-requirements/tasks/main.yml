@@ -1,0 +1,28 @@
+---
+- name: Install apt dependencies
+  pip:
+    name={{ item.name }}
+    version={{ item.version | default(omit) }}
+  with_items:
+    -name: requests
+    version: 2.5.3
+    -name: ipython
+    version: 2.4.1
+    -name: paramiko
+    version: 1.15.2
+    -name: PyYAML
+    version: 3.11
+    -name: Jinja2
+    version: 2.7.3
+    -name: httplib2
+    version: 0.9
+    -name: docker-py
+    version: 0.7.1
+    -name: boto
+    version: 2.36.0
+    -name: dopy
+    version: 0.3.3
+    -name: graphitesend
+    version: 0.3.4
+    -name: passlib
+    version: 1.6.2

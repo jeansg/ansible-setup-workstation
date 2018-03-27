@@ -4,4 +4,4 @@
   remote_user: '{{ current_user }}'
   roles:
     - base
-    - vim
+    - pip-requirements
